@@ -1,6 +1,7 @@
 """Data shapes used by the scam analysis service."""
 
 from enum import Enum
+from typing import Annotated
 
 from pydantic import BaseModel, Field, field_validator
 
@@ -43,3 +44,11 @@ class ScamAssessment(BaseModel):
     next_steps: list[str]
     limitations: str
     source: str = "deterministic_rules"
+
+
+class AIAnalysisExplanation(BaseModel):
+    explanation: str = Field(min_length=1, max_length=1200)
+    next_steps: list[Annotated[str, Field(min_length=1, max_length=300)]] = Field(
+        min_length=1, max_length=5
+    )
+    limitations: str = Field(min_length=1, max_length=800)
