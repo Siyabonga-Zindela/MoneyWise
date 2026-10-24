@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
-     <script src="report-popup.js" defer></script>
+  <script src="report-popup.js" defer></script>
 </head>
 <body>
 
@@ -22,6 +22,7 @@
           <li><a href="#" class="nav-link is-active" aria-current="page">Home</a></li>
           <li><a href="#" class="nav-link">Privacy</a></li>
           <li><a href="#" class="nav-link">Terms</a></li>
+          <li><a href="Admin-login.html" class="nav-link">Login</a></li>
         </ul>
       </nav>
     </div>
@@ -32,13 +33,12 @@
     <p class="lead">Paste a money offer, link or provider name. We check it for pyramid scheme signs and tell you why.</p>
 
     <div class="grid">
-
       <!-- Input card -->
       <section class="card" aria-label="Check an offer">
         <div class="pills" role="tablist" aria-label="What are you checking?">
-          <button type="button" class="pill is-active" role="tab" aria-selected="true"  data-type="message">Message</button>
-          <button type="button" class="pill"           role="tab" aria-selected="false" data-type="link" tabindex="-1">Link</button>
-          <button type="button" class="pill"           role="tab" aria-selected="false" data-type="provider" tabindex="-1">Provider name</button>
+          <button type="button" class="pill is-active" role="tab" aria-selected="true" data-type="message">Message</button>
+          <button type="button" class="pill" role="tab" aria-selected="false" data-type="link" tabindex="-1">Link</button>
+          <button type="button" class="pill" role="tab" aria-selected="false" data-type="provider" tabindex="-1">Provider name</button>
         </div>
 
         <div class="field-group" id="source-group">
@@ -98,7 +98,6 @@
         </div>
         <p class="footnote">Examples of FSCA-regulated providers: FNB, Capitec, Standard Bank. Always confirm on fsca.co.za.</p>
       </section>
-
     </div>
   </main>
 
